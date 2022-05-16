@@ -16,6 +16,9 @@
 		E872CBED2831B07500A72972 /* _147_ep02Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E872CBEC2831B07500A72972 /* _147_ep02Tests.swift */; };
 		E872CBF72831B07500A72972 /* _147_ep02UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E872CBF62831B07500A72972 /* _147_ep02UITests.swift */; };
 		E872CBF92831B07500A72972 /* _147_ep02UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E872CBF82831B07500A72972 /* _147_ep02UITestsLaunchTests.swift */; };
+		E872CC062831BE7A00A72972 /* inicio-sesion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E872CC052831BE7A00A72972 /* inicio-sesion.storyboard */; };
+		E872CC082831BEBB00A72972 /* registrarse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E872CC072831BEBB00A72972 /* registrarse.storyboard */; };
+		E872CC0A2831BEDE00A72972 /* recuperar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E872CC092831BEDE00A72972 /* recuperar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E872CBF22831B07500A72972 /* 1147-ep02UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "1147-ep02UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E872CBF62831B07500A72972 /* _147_ep02UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _147_ep02UITests.swift; sourceTree = "<group>"; };
 		E872CBF82831B07500A72972 /* _147_ep02UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _147_ep02UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E872CC052831BE7A00A72972 /* inicio-sesion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "inicio-sesion.storyboard"; sourceTree = "<group>"; };
+		E872CC072831BEBB00A72972 /* registrarse.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = registrarse.storyboard; sourceTree = "<group>"; };
+		E872CC092831BEDE00A72972 /* recuperar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = recuperar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				E872CBDE2831B07500A72972 /* Assets.xcassets */,
 				E872CBE02831B07500A72972 /* LaunchScreen.storyboard */,
 				E872CBE32831B07500A72972 /* Info.plist */,
+				E872CC052831BE7A00A72972 /* inicio-sesion.storyboard */,
+				E872CC072831BEBB00A72972 /* registrarse.storyboard */,
+				E872CC092831BEDE00A72972 /* recuperar.storyboard */,
 			);
 			path = "1147-ep02";
 			sourceTree = "<group>";
@@ -231,8 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E872CC082831BEBB00A72972 /* registrarse.storyboard in Resources */,
+				E872CC062831BE7A00A72972 /* inicio-sesion.storyboard in Resources */,
 				E872CBE22831B07500A72972 /* LaunchScreen.storyboard in Resources */,
 				E872CBDF2831B07500A72972 /* Assets.xcassets in Resources */,
+				E872CC0A2831BEDE00A72972 /* recuperar.storyboard in Resources */,
 				E872CBDD2831B07400A72972 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
