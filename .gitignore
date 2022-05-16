@@ -1,5 +1,10 @@
 .DS_Store
 
+## User settings
+xcuserdata/
+
+.build/
+
 ### SwiftPackageManager ###
 Packages
 xcuserdata
