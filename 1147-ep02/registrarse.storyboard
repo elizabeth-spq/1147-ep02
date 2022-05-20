@@ -11,7 +11,7 @@
         <!--Registrarse View Controler-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="RegistrarseViewControler" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrarseViewControler" id="Y6W-OH-hqX" customClass="RegistrarseViewControler" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,6 +87,9 @@ ZWplbXBsbxFAY29ycmVvLmNvbQ
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.95606694560000005" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="H2r-FM-3nr" kind="presentation" id="M8M-ev-a8Y"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -129,6 +132,16 @@ ZWplbXBsbxFAY29ycmVvLmNvbQ
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
+        </scene>
+        <!--RecuperarViewControler-->
+        <scene sceneID="Z5P-P2-eE5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="recuperar" referencedIdentifier="RecuperarViewControler" id="H2r-FM-3nr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oqW-MG-7hg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdN-vo-mYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="737" y="100"/>
         </scene>
     </scenes>
     <resources>

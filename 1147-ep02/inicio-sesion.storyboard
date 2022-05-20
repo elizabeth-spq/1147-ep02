@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,25 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Inicio View Controler-->
+        <!--Inicio Sesion Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="InicioViewControler" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="inicioNavigationControler" id="Y6W-OH-hqX" customClass="InicioSesionController" customModule="_147_ep02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KJ-h9-FSI">
-                                <rect key="frame" x="20" y="401" width="350" height="211"/>
+                                <rect key="frame" x="20" y="432" width="374" height="211"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQ0-cM-Odn">
-                                        <rect key="frame" x="15" y="15" width="320" height="24"/>
+                                        <rect key="frame" x="15" y="15" width="344" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YNG-UC-2gI">
-                                        <rect key="frame" x="15" y="49" width="320" height="44"/>
+                                        <rect key="frame" x="15" y="49" width="344" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Ens-aX-bRD"/>
                                         </constraints>
@@ -34,13 +34,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqk-IR-7v6">
-                                        <rect key="frame" x="15" y="113" width="320" height="24"/>
+                                        <rect key="frame" x="15" y="113" width="344" height="24"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="687-g5-7tf">
-                                        <rect key="frame" x="15" y="147" width="320" height="44"/>
+                                        <rect key="frame" x="15" y="147" width="344" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="573-uS-k5c"/>
                                         </constraints>
@@ -67,42 +67,49 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Olvidaste tu contraseña?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbe-QD-XPo">
-                                <rect key="frame" x="20" y="627" width="350" height="21"/>
+                                <rect key="frame" x="20" y="658" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.87882691619999997" green="0.56345841539999997" blue="0.20046297839999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiA-yN-VuD">
-                                <rect key="frame" x="50" y="693" width="290" height="44"/>
+                                <rect key="frame" x="50" y="723.5" width="314" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="oSE-n2-wZR"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesión">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="baseBackgroundColor" red="0.87882691619999997" green="0.56345841539999997" blue="0.20046297839999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="SF9-UF-66e" kind="presentation" id="J6V-fw-aNC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿No tienes una cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-We-B4g">
-                                <rect key="frame" x="50" y="757" width="174" height="21"/>
+                                <rect key="frame" x="50" y="787.5" width="174" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Oy-z8-x4e">
-                                <rect key="frame" x="265" y="757" width="75" height="21"/>
+                                <rect key="frame" x="289" y="787.5" width="75" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.87882691619999997" green="0.56345841539999997" blue="0.20046297839999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4a-Um-bXy">
-                                <rect key="frame" x="0.0" y="44" width="390" height="357"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="388"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7EU-eg-27H">
-                                        <rect key="frame" x="107.66666666666669" y="91" width="175" height="175"/>
+                                        <rect key="frame" x="119.5" y="106.5" width="175" height="175"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="175" id="NkY-KD-7LM"/>
                                             <constraint firstAttribute="width" constant="175" id="VsU-xi-jQs"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingreso de Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt3-nH-epz">
-                                        <rect key="frame" x="20" y="10" width="350" height="21"/>
+                                        <rect key="frame" x="20" y="10" width="374" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -172,7 +179,17 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-365.21739130434787" y="42.857142857142854"/>
+            <point key="canvasLocation" x="783" y="75"/>
+        </scene>
+        <!--RegistrarseViewControler-->
+        <scene sceneID="MZI-SW-1BG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="registrarse" referencedIdentifier="RegistrarseViewControler" id="SF9-UF-66e" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zzm-e3-Dgf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mcm-gc-ba3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1435" y="263"/>
         </scene>
     </scenes>
     <resources>
