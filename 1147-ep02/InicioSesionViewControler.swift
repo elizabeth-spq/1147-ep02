@@ -96,6 +96,10 @@ class InicioSesionController: UIViewController {
         }
     }
     
+    func doSignOut(){
+        try? Auth.auth().signOut()
+    }
+    
 }
 
 //MARK: - Keyboard events
