@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  1147-ep02
 //
-//  Created by Juan Carlos Rodriguez Yarmas on 15/05/22.
+//  Created by Elizabeth Silvia Pumacota Quispe on 15/05/22.
 //
 
 import UIKit

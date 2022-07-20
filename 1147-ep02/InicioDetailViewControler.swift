@@ -2,7 +2,7 @@
 //  InicioDetailViewControler.swift
 //  1147-ep02
 //
-//  Created by Juan Carlos Rodriguez Yarmas on 11/06/22.
+//  Created by Elizabeth Silvia Pumacota Quispe on 11/06/22.
 //
 
 import UIKit

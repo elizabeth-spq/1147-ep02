@@ -2,10 +2,11 @@
 //  InicioSesionViewControler.swift
 //  1147-ep02
 //
-//  Created by Juan Carlos Rodriguez Yarmas on 11/06/22.
+//  Created by Elizabeth Silvia Pumacota Quispe on 11/06/22.
 //
 
 import UIKit
+import FirebaseAuth
 
 class InicioSesionController: UIViewController {
     
@@ -19,6 +20,9 @@ class InicioSesionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("login")
+        doLogin()
         
         customFieldUsuario.layer.borderWidth = 1
         customFieldUsuario.layer.borderColor = #colorLiteral(red: 0.06412941962, green: 0.06311170757, blue: 0.06933446229, alpha: 0.8470588235)
@@ -60,6 +64,37 @@ class InicioSesionController: UIViewController {
         self.unregisterKeyboardNotification()
     }
     
+    func doLogin(){
+        let email = "silvia@gmail.com"
+        let password = "rok@io12345"
+        
+        // Sign in with email and password
+        Auth.auth().signIn(withEmail: email, password: password) { authResult,
+            error in
+            if let error = error, authResult == nil {
+                print("Error in signIn")
+                print(error.localizedDescription)
+            }else{
+                print("signIn success!!")
+            }
+        }
+    }
+    
+    func doRegister(){
+        let email = "silvia@gmail.com"
+        let password = "rok@io12345"
+        
+        // Create a new user
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if error == nil {
+                print("createUser success!!")
+                Auth.auth().signIn(withEmail: email, password: password)
+            } else {
+                print("Error in createUser")
+                print(error?.localizedDescription ?? "")
+            }
+        }
+    }
     
 }
 

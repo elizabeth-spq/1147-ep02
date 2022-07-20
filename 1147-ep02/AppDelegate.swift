@@ -2,18 +2,18 @@
 //  AppDelegate.swift
 //  1147-ep02
 //
-//  Created by Juan Carlos Rodriguez Yarmas on 15/05/22.
+//  Created by Elizabeth Silvia Pumacota Quispe on 15/05/22.
 //
 
 import UIKit
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         return true
     }
 
