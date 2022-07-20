@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class InicioSesionController: UIViewController {
     
@@ -16,13 +17,18 @@ class InicioSesionController: UIViewController {
     @IBOutlet weak var customFieldUsuario: UITextField!
     @IBOutlet weak var customFielPassword: UITextField!
     @IBOutlet weak var customButton: UIButton!
-    
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print("login")
         doLogin()
+        // addContact(name:"Laura", lastname: "Vargas")
+        getContacts()
+        getMesssages()
+        //sendMessage(text: "Has recibido mi email")
+        
         
         customFieldUsuario.layer.borderWidth = 1
         customFieldUsuario.layer.borderColor = #colorLiteral(red: 0.06412941962, green: 0.06311170757, blue: 0.06933446229, alpha: 0.8470588235)
@@ -99,7 +105,67 @@ class InicioSesionController: UIViewController {
     func doSignOut(){
         try? Auth.auth().signOut()
     }
+    // Get the messages
+    func getMesssages(){
+        db.collection("messages").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                print("My messsages")
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+
+    }
     
+    // Send a new message
+    func sendMessage(text: String){
+        var ref: DocumentReference? = nil
+        ref = db.collection("messages").addDocument(data: [
+            "id":" \(UUID())",
+            "text": text,
+            "received": false,
+            "timestamp": Date()
+        ]) { err in
+            if let err = err {
+                print("Error in sendMessage: \(err)")
+            } else {
+                print("message added with ID: \(ref!.documentID)")
+            }
+        }
+    }
+    
+    // Get the contacts
+    func getContacts(){
+        db.collection("contacts").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting contacts: \(err)")
+            } else {
+                print("My contacts")
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+        }
+    }
+    
+    // Add a new contact
+    func addContact(name: String, lastname: String){
+        var ref: DocumentReference? = nil
+        ref = db.collection("contacts").addDocument(data: [
+            "id":" \(UUID())",
+            "text": name,
+            "lastname": lastname
+        ]) { err in
+            if let err = err {
+                print("Error in addContact: \(err)")
+            } else {
+                print("contact added with ID: \(ref!.documentID)")
+            }
+        }
+    }
 }
 
 //MARK: - Keyboard events
