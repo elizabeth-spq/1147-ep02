@@ -28,7 +28,10 @@ class RegisterViewController: UIViewController {
             if error == nil {
                 print("createUser success!!")
                 Auth.auth().signIn(withEmail: email, password: password)
-                
+               /* let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ContactsViewController") as! ContactsViewController
+                self.present(nextViewController, animated: true, completion: nil)
+            */
             } else {
                 print("Error in createUser")
                 print(error?.localizedDescription ?? "")

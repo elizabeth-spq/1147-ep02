@@ -26,6 +26,7 @@
 		E88F03C928550C0300B05708 /* InicioSesionViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88F03C828550C0300B05708 /* InicioSesionViewControler.swift */; };
 		E8AD21BD28882AED00070BB2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AD21BC28882AED00070BB2 /* Message.swift */; };
 		E8DBBD492888FA5700342D93 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBBD482888FA5600342D93 /* RegisterViewController.swift */; };
+		E8DBBD4B288906BA00342D93 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DBBD4A288906BA00342D93 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		E88F03C828550C0300B05708 /* InicioSesionViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionViewControler.swift; sourceTree = "<group>"; };
 		E8AD21BC28882AED00070BB2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E8DBBD482888FA5600342D93 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E8DBBD4A288906BA00342D93 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				E88F03C6285506B700B05708 /* InicioDetailViewControler.swift */,
 				E88F03C828550C0300B05708 /* InicioSesionViewControler.swift */,
 				E8DBBD482888FA5600342D93 /* RegisterViewController.swift */,
+				E8DBBD4A288906BA00342D93 /* ContactsViewController.swift */,
 			);
 			path = "1147-ep02";
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E872CBD62831B07400A72972 /* AppDelegate.swift in Sources */,
+				E8DBBD4B288906BA00342D93 /* ContactsViewController.swift in Sources */,
 				E88F03C928550C0300B05708 /* InicioSesionViewControler.swift in Sources */,
 				E8AD21BD28882AED00070BB2 /* Message.swift in Sources */,
 				E8DBBD492888FA5700342D93 /* RegisterViewController.swift in Sources */,

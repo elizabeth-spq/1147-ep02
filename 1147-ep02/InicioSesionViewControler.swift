@@ -22,10 +22,11 @@ class InicioSesionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         print("login")
         doLogin()
         // addContact(name:"Laura", lastname: "Vargas")
-        getContacts()
+        //getContacts()
         getMesssages()
         //sendMessage(text: "Has recibido mi email")
         
@@ -122,20 +123,7 @@ class InicioSesionController: UIViewController {
         }
     }
     
-    // Get the contacts
-    func getContacts(){
-        db.collection("contacts").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting contacts: \(err)")
-            } else {
-                print("My contacts")
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                }
-            }
-        }
-    }
-    
+
     // Add a new contact
     func addContact(name: String, lastname: String){
         var ref: DocumentReference? = nil

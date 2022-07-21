@@ -473,10 +473,10 @@
             </objects>
             <point key="canvasLocation" x="2482" y="-332"/>
         </scene>
-        <!--View Controller-->
+        <!--Contacts View Controller-->
         <scene sceneID="pFG-JN-vDQ">
             <objects>
-                <viewController id="A8x-nM-Int" sceneMemberID="viewController">
+                <viewController id="A8x-nM-Int" customClass="ContactsViewController" customModule="_147_ep02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yOi-nb-f3m">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -861,7 +861,7 @@
         <!--Register View Controller-->
         <scene sceneID="8CJ-ZE-INP">
             <objects>
-                <viewController id="VyY-bb-Lkx" customClass="RegisterViewController" customModule="_147_ep02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterStoryboard" id="VyY-bb-Lkx" customClass="RegisterViewController" customModule="_147_ep02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Skz-Bs-izu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
