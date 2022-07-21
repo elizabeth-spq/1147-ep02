@@ -85,22 +85,7 @@ class InicioSesionController: UIViewController {
             }
         }
     }
-    
-    func doRegister(){
-        let email = "silvia@gmail.com"
-        let password = "rok@io12345"
-        
-        // Create a new user
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if error == nil {
-                print("createUser success!!")
-                Auth.auth().signIn(withEmail: email, password: password)
-            } else {
-                print("Error in createUser")
-                print(error?.localizedDescription ?? "")
-            }
-        }
-    }
+
     
     func doSignOut(){
         try? Auth.auth().signOut()
